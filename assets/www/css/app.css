@@ -1,0 +1,96 @@
+
+@media screen and (max-device-width: 1060px) {
+#primary { width:30%; }
+#secondary { width:30%; margin-left:3%;} 
+}
+
+@media screen and (max-device-width: 768px) {
+#primary { width:100%; }
+#secondary { width:100%; margin:0; border:none; }
+}
+
+@media screen and (max-device-width: 1280px) {
+#primary { width:30%; }
+#secondary { width:30%; margin-left:3%;} 
+}
+
+@media screen and (max-device-width: 720px) {
+#primary { width:100%; }
+#secondary { width:100%; margin:0; border:none; }
+}
+
+@viewport {
+  zoom: 1.0;
+  width: auto;
+  height: extend-to-zoom 100%;
+}
+
+html,body {
+	-webkit-backface-visibility: hidden;
+	-webkit-user-select: none;
+}
+
+@font-face {
+	font-family: roboto_light;
+	src: url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: roboto_light, arial, sans-serif;
+	background-color: #414141;
+	color: black;
+	max-width: 100%;
+}
+
+label,.label {
+	font-family: arial, sans-serif;
+}
+
+input {
+	-webkit-user-select: auto !important;
+}
+
+button,input,textarea {
+	border: none;
+	padding: 5px;
+}
+
+ul {
+	list-style: none;
+}
+
+select {
+	-webkit-appearance: menulist;
+	-webkit-border-radius: 0px;
+}
+
+.full {
+	width: 100%;
+	left: 0;
+	overflow-x: scroll;
+}
+
+#toast {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	width: 200px;
+	margin-left: -100px;
+	background-color: black;
+	color: white;
+	padding: 10px 0;
+	text-align: center;
+	opacity: .9;
+	z-index: 99999;
+	border-radius: 50px;
+	font-size: 18px;
+	/*The good stuff */
+	-webkit-transition: opacity 0.5s ease-out; /* Saf3.2+, Chrome */
+}
+
+.marginauto {
+	margin-left: auto;
+	margin-right: auto;
+}
